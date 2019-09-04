@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Input, Icon } from "react-native-elements";
 
-export default (inputTemplate = locals => {
+export default inputTemplate = locals => {
   return (
     <View style={styles.viewContainer}>
       <Input
@@ -18,14 +18,18 @@ export default (inputTemplate = locals => {
           />
         }
         onChangeText={value => locals.onChange(value)}
+        inputContainerStyle={styles.inputContainer}
       />
     </View>
   );
-});
+};
 
 const styles = StyleSheet.create({
   viewContainer: {
     marginTop: 12,
     marginBottom: 12
+  },
+  inputContainer: {
+    height: 25
   }
 });

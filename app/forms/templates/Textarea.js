@@ -17,8 +17,8 @@ export default textareaTemplate = locals => {
 
 const styles = StyleSheet.create({
   viewContainer: {
-    margin: 12,
-    height: 100,
+    margin: 8,
+    height: 90,
     width: "100%"
   },
   inputContainer: {
